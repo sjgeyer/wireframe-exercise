@@ -2,6 +2,7 @@
   font-family: Helvetica, sans-serif;
 }
 
+/* HEADER STYLES */
 header, footer {
   background: #444;
   height: 100px;
@@ -26,42 +27,54 @@ nav li {
 
 a {
   text-decoration: none;
-  color: #888
+  color: #888;
+  font-family: Helvetica, sans-serif;
 }
 
+/* MAIN STYLES */
 main {
   width: 960px;
   margin: 30px auto;
 }
 
 main img {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 main ul {
+  margin-top: 0px;
   padding-left: 0px;
 }
 
 main li {
-  display: inline-block;
-  margin-right: 25px;
+  float: left;
+  margin-right: 30px;
+  list-style: none;
 }
 
-#third {
+main li:last-child {
   margin-right: 0px;
 }
 
-#featured h3 {
-  margin-top: 0px;
-  margin-bottom: 5px;
-  font-size: 22px;
+/* Section styles */
+section img {
+  margin-bottom: 0px;
 }
 
-#featured p {
+section div {
+  width: 450px;
+  float: right;
+}
+
+section h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+section p {
   height: 320px;
-  overflow: scroll;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  overflow: auto;
   line-height: 24px;
   font-size: 18px;
   font-style: italic;
@@ -69,19 +82,17 @@ main li {
 
 button {
   background-color: #000;
+  border: none;
   color: white;
   font-size: 14px;
   height: 40px;
   width: 140px;
   margin-top: 10px;
-  transition: color 500ms
+  transition: 350ms;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #444;
-}
-
-#featured {
-  width: 450px;
-  float: right;
+  background-color:green;
 }
